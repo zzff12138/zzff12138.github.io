@@ -1179,7 +1179,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #a39c8e;
+  background: #7ec147;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2433,18 +2433,20 @@ body {
   background: url("/images/jinx.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
   background-position: 50% 50%;
-}
-.content-wrap {
-  opacity: 0.9;
-}
-.sidebar {
-  opacity: 0.9;
+  color: var(--text-color);
+  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 1em;
+  line-height: 2;
 }
 .header-inner {
-  background: rgba(255,255,255,0.9);
+  opacity: 0.85;
 }
-.popup {
+.sidebar {
+  transition-duration: 0.4s;
+  opacity: 0.85;
+}
+.content {
+  padding-top: 15px;
   opacity: 0.9;
 }
