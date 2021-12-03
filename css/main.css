@@ -1179,7 +1179,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #5238eb;
+  background: #d2ffe4;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2430,12 +2430,8 @@ ul.breadcrumb li + li:last-child {
   padding: 0;
 }
 body {
-  background: url("https://z3.ax1x.com/2021/12/02/oNwQhV.jpg");
+  background: url("/images/jinx.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 50% 50%;
-  color: var(--text-color);
-  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 1em;
-  line-height: 2;
+  background-position: 100% 100%;
 }
