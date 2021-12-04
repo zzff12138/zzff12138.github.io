@@ -132,7 +132,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">4</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">3</span></a>
 
   </li>
   </ul>
@@ -187,7 +187,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-12-04 13:35:51 / 修改时间：13:36:56" itemprop="dateCreated datePublished" datetime="2021-12-04T13:35:51+08:00">2021-12-04</time>
+              <time title="创建时间：2021-12-04 13:35:51 / 修改时间：14:19:31" itemprop="dateCreated datePublished" datetime="2021-12-04T13:35:51+08:00">2021-12-04</time>
             </span>
 
           
@@ -201,11 +201,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>打开hexo next主题下的next\source\css里的main.styl文件，在</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> $inject_style in hexo-config(<span class="string">&#x27;injects.style&#x27;</span>)</span><br><span class="line">  @<span class="keyword">import</span> $inject_style;</span><br></pre></td></tr></table></figure>
-<p>代码下添加如下代码</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  background :url(/images/jinx.png);<span class="comment">//图片位置</span></span><br><span class="line">  background-repeat: no-repeat;</span><br><span class="line">  background-attachment:fixed;</span><br><span class="line">  background-size:cover;</span><br><span class="line">  background-position: <span class="number">0</span>% <span class="number">20</span>%;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//侧边框的透明度设置</span></span><br><span class="line">.sidebar-inner &#123;</span><br><span class="line">  background: rgba(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">0.8</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//菜单栏的透明度设置</span></span><br><span class="line">.header-inner &#123;</span><br><span class="line">  background: rgba(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">0.8</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//中心文章的透明度</span></span><br><span class="line">.content-wrap &#123;</span><br><span class="line">  background: rgba(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">0</span>);</span><br><span class="line">  <span class="comment">//opacity: 0.8;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//搜索框（local-search）的透明度设置</span></span><br><span class="line">.popup &#123;</span><br><span class="line">  opacity: <span class="number">0.8</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//设置边框样式</span></span><br><span class="line"><span class="comment">// 侧边标题栏</span></span><br><span class="line">.header-inner &#123;</span><br><span class="line">  border-radius: <span class="number">20</span>px <span class="number">20</span>px <span class="number">20</span>px <span class="number">20</span>px; <span class="comment">//边框圆角</span></span><br><span class="line">  opacity: <span class="number">0.85</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 侧边头像栏</span></span><br><span class="line">.sidebar&#123;</span><br><span class="line">  transition-duration: <span class="number">0.4</span>s;  </span><br><span class="line">  opacity: <span class="number">0.9</span>;  <span class="comment">// 透明度</span></span><br><span class="line">  border-radius: <span class="number">10</span>px <span class="number">10</span>px <span class="number">10</span>px <span class="number">10</span>px; <span class="comment">//边框圆角</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 侧边头像框内部</span></span><br><span class="line">.sidebar-inner &#123;</span><br><span class="line">  background: var(--content-bg-color);</span><br><span class="line">  border-radius: <span class="number">10</span>px <span class="number">10</span>px <span class="number">10</span>px <span class="number">10</span>px; <span class="comment">//边框圆角</span></span><br><span class="line">  box-shadow: <span class="number">0</span> <span class="number">2</span>px <span class="number">2</span>px <span class="number">0</span> rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.12</span>), <span class="number">0</span> <span class="number">3</span>px <span class="number">1</span>px <span class="number">-2</span><span class="function">px <span class="title">rgba</span><span class="params">(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.06</span>)</span>, 0 1px 5px 0 <span class="title">rgba</span><span class="params">(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.12</span>)</span>, 0 -1px 0.5px 0 <span class="title">rgba</span><span class="params">(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.09</span>)</span></span>;</span><br><span class="line">  box-sizing: border-box;</span><br><span class="line">  color: var(--text-color);</span><br><span class="line">  width: <span class="number">240</span>px;</span><br><span class="line">  opacity: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//第一个文章</span></span><br><span class="line">.post-block &#123;</span><br><span class="line">  <span class="comment">//opacity: 0.9;</span></span><br><span class="line">  background: rgba(<span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>, <span class="number">0.9</span>);<span class="comment">//改变文章的背景透明度</span></span><br><span class="line">  <span class="comment">//background: var(--content-bg-color);</span></span><br><span class="line">  border-radius: <span class="number">10</span>px <span class="number">10</span>px <span class="number">10</span>px <span class="number">10</span>px; <span class="comment">//边框圆角</span></span><br><span class="line">  box-shadow: <span class="number">0</span> <span class="number">2</span>px <span class="number">2</span>px <span class="number">0</span> rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.12</span>), <span class="number">0</span> <span class="number">3</span>px <span class="number">1</span>px <span class="number">-2</span><span class="function">px <span class="title">rgba</span><span class="params">(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.06</span>)</span>, 0 1px 5px 0 <span class="title">rgba</span><span class="params">(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.12</span>)</span></span>;</span><br><span class="line">  padding: <span class="number">40</span>px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//之后的所有文章</span></span><br><span class="line">.post-block + .post-block &#123;</span><br><span class="line">  border-radius: <span class="number">10</span>px <span class="number">10</span>px <span class="number">10</span>px <span class="number">10</span>px; <span class="comment">//边框圆角</span></span><br><span class="line">  box-shadow: <span class="number">0</span> <span class="number">2</span>px <span class="number">2</span>px <span class="number">0</span> rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.12</span>), <span class="number">0</span> <span class="number">3</span>px <span class="number">1</span>px <span class="number">-2</span><span class="function">px <span class="title">rgba</span><span class="params">(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.06</span>)</span>, 0 1px 5px 0 <span class="title">rgba</span><span class="params">(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.12</span>)</span>, 0 -1px 0.5px 0 <span class="title">rgba</span><span class="params">(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.09</span>)</span></span>;</span><br><span class="line">  margin-top: <span class="number">12</span>px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+          <p>打开hexo next主题下的next\source\css里的main.styl文件
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/12/04/NEXT%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%8D%A2%E8%83%8C%E6%99%AF/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -272,65 +276,6 @@
             </div>
           <!--/noindex-->
         
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/12/02/my-first-blog/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/touxiang.jpg">
-      <meta itemprop="name" content="invincible">
-      <meta itemprop="description" content="生活不易，且行珍惜。">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="INVINCIBLEの博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/12/02/my-first-blog/" class="post-title-link" itemprop="url">my first blog</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2021-12-02 16:54:56 / 修改时间：16:56:39" itemprop="dateCreated datePublished" datetime="2021-12-02T16:54:56+08:00">2021-12-02</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>test</p>
-
       
     </div>
 
@@ -485,7 +430,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
